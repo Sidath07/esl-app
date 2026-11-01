@@ -1,5 +1,7 @@
 // Small offline cache: app shell and content are cached after first use.
-const CACHE = 'sfw-v1';
+// 20261101074247 is replaced at build time (vite.config.js), so every deploy gets a fresh cache
+// and the old one (with old content) is deleted on activate.
+const CACHE = 'sfw-v2-20261101074247';
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest', './content/index.json'])).then(() => self.skipWaiting()));
 });
@@ -15,8 +17,10 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   // Pages and content: network first so updates arrive, cache as fallback for offline use.
+  // Bypass the browser's HTTP cache (GitHub Pages sends max-age=600) so updates show at once.
+  const fresh = e.request.mode === 'navigate' ? new Request(url.href, { cache: 'no-cache' }) : new Request(e.request, { cache: 'no-cache' });
   e.respondWith(
-    fetch(e.request)
+    fetch(fresh)
       .then((res) => { const copy = res.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); return res; })
       .catch(() => caches.match(e.request).then((hit) => hit || caches.match('./index.html')))
   );

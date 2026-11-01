@@ -216,43 +216,108 @@
    "id": "tourism",
    "title": "Tourism",
    "kind": "track",
-   "scenarios": 7,
-   "lines": 131,
+   "scenarios": 20,
+   "lines": 376,
    "summary": [
     {
      "no": 1,
      "title": "Finding a landmark address: a passer-by helps",
-     "group": "Out and about"
+     "group": ""
     },
     {
      "no": 2,
      "title": "Is that fare fair? Booking a PickMe at the front desk",
-     "group": "Hotel and guest service"
+     "group": ""
     },
     {
      "no": 3,
      "title": "Arranging a day hire at the front desk, and the head wobble",
-     "group": "Hotel and guest service"
+     "group": ""
+    },
+    {
+     "no": 4,
+     "title": "Temple etiquette and a Buddha tattoo",
+     "group": ""
+    },
+    {
+     "no": 5,
+     "title": "A birthday on a Poya day",
+     "group": ""
+    },
+    {
+     "no": 6,
+     "title": "Photos of people, monks and checkpoints",
+     "group": ""
+    },
+    {
+     "no": 7,
+     "title": "Rice and curry with your right hand",
+     "group": ""
+    },
+    {
+     "no": 8,
+     "title": "Vegetarian, halal and a nut allergy",
+     "group": ""
     },
     {
      "no": 9,
      "title": "How does tipping work? A question at checkout",
-     "group": "Hotel and guest service"
+     "group": ""
+    },
+    {
+     "no": 10,
+     "title": "Tickets for the Ella train",
+     "group": ""
     },
     {
      "no": 11,
      "title": "Safety tips before a Yala safari: the concierge briefing",
-     "group": "Hotel and guest service"
+     "group": ""
+    },
+    {
+     "no": 12,
+     "title": "Climbing Sigiriya with children in the heat",
+     "group": ""
+    },
+    {
+     "no": 13,
+     "title": "The Temple of the Tooth with an elderly visitor",
+     "group": ""
+    },
+    {
+     "no": 14,
+     "title": "Which beach this month?",
+     "group": ""
     },
     {
      "no": 15,
      "title": "SIM cards, cash and cards on the first morning",
-     "group": "Hotel and guest service"
+     "group": ""
+    },
+    {
+     "no": 16,
+     "title": "An upset stomach and the pharmacy",
+     "group": ""
+    },
+    {
+     "no": 17,
+     "title": "A ‘special festival’ and a gem shop",
+     "group": ""
     },
     {
      "no": 18,
      "title": "A lost phone, the front desk and the tourist police",
-     "group": "Hotel and guest service"
+     "group": ""
+    },
+    {
+     "no": 19,
+     "title": "Where should I go? A backpacker and a family",
+     "group": ""
+    },
+    {
+     "no": 20,
+     "title": "Planning for the Esala Perahera and Avurudu",
+     "group": ""
     }
    ]
   },
