@@ -1,0 +1,267 @@
+{
+ "version": 1,
+ "keyMoves": [
+  {
+   "id": "greet",
+   "label": "Greet and open politely",
+   "pattern": "\\b(good (morning|afternoon|evening)|welcome|thank you for (calling|holding|your time)|hello|hi|excuse me|my name is|this is)\\b"
+  },
+  {
+   "id": "empathy",
+   "label": "Show empathy",
+   "pattern": "\\b(sorry|i understand|understand|frustrat\\w*|don't worry|worr\\w*|take your time|i can see|that must|apologi[sz]e|i know this|i'm glad|stressful|disappoint\\w*)\\b"
+  },
+  {
+   "id": "check",
+   "label": "Check or confirm details",
+   "pattern": "\\b(confirm|may i (have|see|ask|check)|could you (confirm|tell|give|spell|repeat)|is that (right|correct)|have i understood|just to (check|confirm)|let me (check|summarise|summarize|confirm)|so you|which|do you remember)\\b"
+  },
+  {
+   "id": "explain",
+   "label": "Explain clearly with times or numbers",
+   "pattern": "(\\d|\\b(within|working days?|minutes?|hours?|today|tomorrow|this evening|by (monday|tuesday|wednesday|thursday|friday|saturday|sunday)|rupees|percent|means)\\b)"
+  },
+  {
+   "id": "close",
+   "label": "Agree next steps and close",
+   "pattern": "\\b(reference|anything else|you're welcome|my pleasure|have a (good|nice|lovely|safe)|enjoy|next step|i'll (send|call|email|follow)|we'll (send|call)|please call)\\b"
+  }
+ ],
+ "sections": [
+  {
+   "id": "basics",
+   "title": "Back to Basics",
+   "kind": "basics",
+   "sets": 13,
+   "items": 260
+  },
+  {
+   "id": "banking",
+   "title": "Banking",
+   "kind": "track",
+   "scenarios": 10,
+   "lines": 188,
+   "summary": [
+    {
+     "no": 1,
+     "title": "Opening a savings account",
+     "group": ""
+    },
+    {
+     "no": 2,
+     "title": "Accessing a late spouse's account",
+     "group": ""
+    },
+    {
+     "no": 3,
+     "title": "Lost debit card",
+     "group": ""
+    },
+    {
+     "no": 4,
+     "title": "ATM debited, no cash dispensed",
+     "group": ""
+    },
+    {
+     "no": 5,
+     "title": "Transfer debited, not credited",
+     "group": ""
+    },
+    {
+     "no": 6,
+     "title": "OTP shared with a scammer",
+     "group": ""
+    },
+    {
+     "no": 7,
+     "title": "Personal loan explained",
+     "group": ""
+    },
+    {
+     "no": 8,
+     "title": "Unexpected monthly charge",
+     "group": ""
+    },
+    {
+     "no": 9,
+     "title": "Formal complaint and escalation",
+     "group": ""
+    },
+    {
+     "no": 10,
+     "title": "Elderly customer and a prize scam",
+     "group": ""
+    }
+   ]
+  },
+  {
+   "id": "insurance",
+   "title": "Insurance",
+   "kind": "track",
+   "scenarios": 10,
+   "lines": 191,
+   "summary": [
+    {
+     "no": 1,
+     "title": "The direct debit that didn't go through",
+     "group": "All scenarios"
+    },
+    {
+     "no": 2,
+     "title": "Where is my flood claim?",
+     "group": "All scenarios"
+    },
+    {
+     "no": 3,
+     "title": "Why was my claim rejected?",
+     "group": "All scenarios"
+    },
+    {
+     "no": 4,
+     "title": "Five weeks at the garage",
+     "group": "All scenarios"
+    },
+    {
+     "no": 5,
+     "title": "The bill at discharge",
+     "group": "All scenarios"
+    },
+    {
+     "no": 6,
+     "title": "Three months and still no maturity payment",
+     "group": "All scenarios"
+    },
+    {
+     "no": 7,
+     "title": "“The agent promised me 15%”",
+     "group": "All scenarios"
+    },
+    {
+     "no": 8,
+     "title": "I can't afford the premium anymore",
+     "group": "All scenarios"
+    },
+    {
+     "no": 9,
+     "title": "A widow's first claim",
+     "group": "All scenarios"
+    },
+    {
+     "no": 10,
+     "title": "Why has my medical cover gone up?",
+     "group": "All scenarios"
+    }
+   ]
+  },
+  {
+   "id": "bpo",
+   "title": "KPO/BPO",
+   "kind": "track",
+   "scenarios": 10,
+   "lines": 190,
+   "summary": [
+    {
+     "no": 1,
+     "title": "Wrong size before a wedding",
+     "group": "Basic"
+    },
+    {
+     "no": 2,
+     "title": "Locked out before a client meeting",
+     "group": "Basic"
+    },
+    {
+     "no": 3,
+     "title": "Why has my broadband bill gone up?",
+     "group": "Basic"
+    },
+    {
+     "no": 4,
+     "title": "A $480 bill the insurance should have paid",
+     "group": "Advanced"
+    },
+    {
+     "no": 5,
+     "title": "Storm damage: lodging a home claim offshore",
+     "group": "Advanced"
+    },
+    {
+     "no": 6,
+     "title": "A VAT deadline and missing invoices",
+     "group": "Advanced"
+    },
+    {
+     "no": 7,
+     "title": "Three problems, four weeks to Black Friday",
+     "group": "Advanced"
+    },
+    {
+     "no": 8,
+     "title": "The fourth call about an estimated bill",
+     "group": "Complaint resolution"
+    },
+    {
+     "no": 9,
+     "title": "Cancelled connection: “I want a supervisor”",
+     "group": "Complaint resolution"
+    },
+    {
+     "no": 10,
+     "title": "The callback I missed",
+     "group": "Complaint resolution"
+    }
+   ]
+  },
+  {
+   "id": "tourism",
+   "title": "Tourism",
+   "kind": "track",
+   "scenarios": 7,
+   "lines": 131,
+   "summary": [
+    {
+     "no": 1,
+     "title": "Finding a landmark address: a passer-by helps",
+     "group": "Out and about"
+    },
+    {
+     "no": 2,
+     "title": "Is that fare fair? Booking a PickMe at the front desk",
+     "group": "Hotel and guest service"
+    },
+    {
+     "no": 3,
+     "title": "Arranging a day hire at the front desk, and the head wobble",
+     "group": "Hotel and guest service"
+    },
+    {
+     "no": 9,
+     "title": "How does tipping work? A question at checkout",
+     "group": "Hotel and guest service"
+    },
+    {
+     "no": 11,
+     "title": "Safety tips before a Yala safari: the concierge briefing",
+     "group": "Hotel and guest service"
+    },
+    {
+     "no": 15,
+     "title": "SIM cards, cash and cards on the first morning",
+     "group": "Hotel and guest service"
+    },
+    {
+     "no": 18,
+     "title": "A lost phone, the front desk and the tourist police",
+     "group": "Hotel and guest service"
+    }
+   ]
+  },
+  {
+   "id": "ptm",
+   "title": "Presentation Preparation",
+   "kind": "ptm",
+   "scenarios": 3,
+   "items": 48
+  }
+ ]
+}
