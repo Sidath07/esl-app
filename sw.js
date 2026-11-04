@@ -1,7 +1,7 @@
 // Small offline cache: app shell and content are cached after first use.
-// 20261103062732 is replaced at build time (vite.config.js), so every deploy gets a fresh cache
+// 20261104102258 is replaced at build time (vite.config.js), so every deploy gets a fresh cache
 // and the old one (with old content) is deleted on activate.
-const CACHE = 'sfw-v2-20261103062732';
+const CACHE = 'sfw-v2-20261104102258';
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest', './content/index.json'])).then(() => self.skipWaiting()));
 });
