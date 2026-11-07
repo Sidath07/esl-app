@@ -1,7 +1,7 @@
 // Small offline cache: app shell and content are cached after first use.
-// 20261104105437 is replaced at build time (vite.config.js), so every deploy gets a fresh cache
+// 20261107060505 is replaced at build time (vite.config.js), so every deploy gets a fresh cache
 // and the old one (with old content) is deleted on activate.
-const CACHE = 'sfw-v2-20261104105437';
+const CACHE = 'sfw-v2-20261107060505';
 // Voice clips are cached on first play (not precached, so the first load stays small) and kept
 // across deploys: a clip's file name is a hash of its text, so it never changes.
 const AUDIO_CACHE = 'eme-voice-v1';
